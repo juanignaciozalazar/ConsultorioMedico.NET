@@ -31,17 +31,19 @@
             this.buttonRegistro = new System.Windows.Forms.Button();
             this.buttonAgenda = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonInformeHistoria = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonInformeCitas = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonRegistro
             // 
             this.buttonRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonRegistro.Location = new System.Drawing.Point(3, 3);
+            this.buttonRegistro.Location = new System.Drawing.Point(15, 15);
+            this.buttonRegistro.Margin = new System.Windows.Forms.Padding(15);
             this.buttonRegistro.Name = "buttonRegistro";
-            this.buttonRegistro.Size = new System.Drawing.Size(194, 106);
+            this.buttonRegistro.Size = new System.Drawing.Size(107, 84);
             this.buttonRegistro.TabIndex = 0;
             this.buttonRegistro.Text = "Registro Pacientes";
             this.buttonRegistro.UseVisualStyleBackColor = true;
@@ -50,9 +52,10 @@
             // buttonAgenda
             // 
             this.buttonAgenda.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonAgenda.Location = new System.Drawing.Point(3, 115);
+            this.buttonAgenda.Location = new System.Drawing.Point(152, 15);
+            this.buttonAgenda.Margin = new System.Windows.Forms.Padding(15);
             this.buttonAgenda.Name = "buttonAgenda";
-            this.buttonAgenda.Size = new System.Drawing.Size(194, 106);
+            this.buttonAgenda.Size = new System.Drawing.Size(107, 84);
             this.buttonAgenda.TabIndex = 1;
             this.buttonAgenda.Text = "Agenda de Citas";
             this.buttonAgenda.UseVisualStyleBackColor = true;
@@ -60,43 +63,60 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.buttonRegistro, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.buttonAgenda, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 0, 3);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.buttonInformeHistoria, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.buttonAgenda, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.buttonInformeCitas, 4, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(53, 252);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(15);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 450);
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(689, 114);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // buttonInformeHistoria
+            // 
+            this.buttonInformeHistoria.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonInformeHistoria.Location = new System.Drawing.Point(426, 15);
+            this.buttonInformeHistoria.Margin = new System.Windows.Forms.Padding(15);
+            this.buttonInformeHistoria.Name = "buttonInformeHistoria";
+            this.buttonInformeHistoria.Size = new System.Drawing.Size(107, 84);
+            this.buttonInformeHistoria.TabIndex = 3;
+            this.buttonInformeHistoria.Text = "Informe Historia Clinica";
+            this.buttonInformeHistoria.UseVisualStyleBackColor = true;
+            this.buttonInformeHistoria.Click += new System.EventHandler(this.buttonInformeHistoria_Click);
             // 
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(3, 227);
+            this.button3.Location = new System.Drawing.Point(289, 15);
+            this.button3.Margin = new System.Windows.Forms.Padding(15);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 106);
+            this.button3.Size = new System.Drawing.Size(107, 84);
             this.button3.TabIndex = 2;
             this.button3.Text = "Historia Clínica";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.buttonHistoriaClinica_Click);
             // 
-            // button4
+            // buttonInformeCitas
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(3, 339);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(194, 108);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Generador Informes";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonInformeCitas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonInformeCitas.Location = new System.Drawing.Point(563, 15);
+            this.buttonInformeCitas.Margin = new System.Windows.Forms.Padding(15);
+            this.buttonInformeCitas.Name = "buttonInformeCitas";
+            this.buttonInformeCitas.Size = new System.Drawing.Size(111, 84);
+            this.buttonInformeCitas.TabIndex = 4;
+            this.buttonInformeCitas.Text = "Citas del dia";
+            this.buttonInformeCitas.UseVisualStyleBackColor = true;
+            this.buttonInformeCitas.Click += new System.EventHandler(this.buttonInformeCitas_Click);
             // 
             // FormInicio
             // 
@@ -117,7 +137,8 @@
         private System.Windows.Forms.Button buttonAgenda;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonInformeHistoria;
+        private System.Windows.Forms.Button buttonInformeCitas;
     }
 }
 

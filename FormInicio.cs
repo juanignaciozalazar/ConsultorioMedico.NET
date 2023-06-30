@@ -16,7 +16,8 @@ namespace ConsultorioMedico
         FormRegistro formRegistro;
         FormAgenda formAgenda;
         FormHistoriaClinica formHistoriaClinica;
-
+        FormInformeHistoria formInformeHistoria;
+        FormInformeCitas formInformeCitas;
         public FormInicio()
         {
             InitializeComponent();
@@ -38,6 +39,18 @@ namespace ConsultorioMedico
         {
             this.formHistoriaClinica = new FormHistoriaClinica();
             this.formHistoriaClinica.ShowDialog();
+        }
+
+        private void buttonInformeHistoria_Click(object sender, EventArgs e)
+        {
+             this.formInformeHistoria = new FormInformeHistoria();
+            this.formInformeHistoria.ShowDialog();
+        }
+
+        private void buttonInformeCitas_Click(object sender, EventArgs e)
+        {
+            this.formInformeCitas = new FormInformeCitas();
+            this.formInformeCitas.ShowDialog();
         }
     }
 }
